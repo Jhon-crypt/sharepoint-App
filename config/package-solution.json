@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "tca-interact-webpart-client-side-solution",
+    "id": "f620b0c2-b5c5-4d7e-8b8c-2c5f3a8b9d0e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "TCA Architects",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": ""
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "TCA Interactive web part"
+      },
+      "longDescription": {
+        "default": "TCA Interactive web part"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "tca-interact-webpart Feature",
+        "description": "The feature that activates elements of the tca-interact-webpart solution.",
+        "id": "e7c8d0a1-b2c3-4d5e-6f7a-8b9c0d1e2f3a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/tca-interact-webpart.sppkg"
+  }
+} 

@@ -1,0 +1,300 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.tcaInteract {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+  
+  // Header styles
+  .header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .welcomeTitle {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .logo {
+      img {
+        height: 60px;
+        width: auto;
+      }
+    }
+  }
+  
+  // Main content container
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  // Column styles
+  .leftColumn,
+  .middleColumn,
+  .rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  // Section titles
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  // Our Mission section
+  .missionSection {
+    .missionText {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+    
+    .missionImage {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+  
+  // Core Values section
+  .coreValuesSection {
+    .valuesList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .valueItem {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      
+      .valueIcon {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        font-size: 24px;
+        color: #000000;
+      }
+      
+      .valueContent {
+        .valueTitle {
+          font-weight: bold;
+          font-size: 16px;
+          color: #000000;
+          margin-bottom: 5px;
+        }
+        
+        .valueDescription {
+          font-size: 14px;
+          color: #666666;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+  
+  // Resource Links section
+  .resourceLinksSection {
+    .linksList {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .resourceLink {
+      background-color: #FFD700;
+      color: #000000;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 24px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: #FFC107;
+        text-decoration: none;
+        color: #000000;
+      }
+      
+      .linkDescription {
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+        margin-top: 5px;
+        color: #333333;
+      }
+    }
+  }
+  
+  // Project Spotlight section
+  .projectSpotlightSection {
+    .spotlightContent {
+      .spotlightLocation {
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 15px;
+      }
+      
+      .spotlightImage {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+  
+  // Shout Out section
+  .shoutOutSection {
+    .shoutOutCard {
+      .avatarContainer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        
+        .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #cccccc;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          color: #666666;
+        }
+        
+        .nameTitle {
+          .name {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 2px;
+          }
+          
+          .title {
+            font-size: 14px;
+            color: #666666;
+          }
+        }
+      }
+      
+      .shoutOutText {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      
+      .nominator {
+        font-size: 12px;
+        color: #666666;
+        font-style: italic;
+      }
+    }
+  }
+  
+  // Events section
+  .eventsSection {
+    .eventsList {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .eventItem {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333333;
+      
+      .eventDate {
+        font-weight: bold;
+        color: #000000;
+      }
+    }
+  }
+  
+  // Social Media section
+  .socialMediaSection {
+    text-align: center;
+    
+    .socialTitle {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      
+      .socialIcon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 20px;
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+          background-color: #333333;
+        }
+      }
+    }
+  }
+  
+  // Responsive design
+  @media (max-width: 1024px) {
+    .mainContent {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    .rightColumn {
+      grid-column: 1 / -1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      .welcomeTitle {
+        font-size: 32px;
+      }
+    }
+    
+    .mainContent {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+} 

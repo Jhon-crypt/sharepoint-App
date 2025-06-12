@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "b3f7c8d9-e1a2-4f5b-8c9d-0e1f2a3b4c5d",
+  "alias": "TcaInteractWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "TCA Interact" },
+    "description": { "default": "TCA Interactive SharePoint Web Part" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "TCA Interact"
+    }
+  }]
+} 
