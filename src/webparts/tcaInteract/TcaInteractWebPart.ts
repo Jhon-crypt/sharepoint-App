@@ -6,7 +6,7 @@ import {
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { sp } from '@pnp/sp/presets/all';
+// PnPjs is initialized in the main component
 
 import * as strings from 'TcaInteractWebPartStrings';
 import TcaInteract from './components/TcaInteract';
@@ -19,12 +19,7 @@ export interface ITcaInteractWebPartProps {
 export default class TcaInteractWebPart extends BaseClientSideWebPart<ITcaInteractWebPartProps> {
 
   protected onInit(): Promise<void> {
-    return super.onInit().then(_ => {
-      // Initialize PnPjs
-      sp.setup({
-        spfxContext: this.context
-      });
-    });
+    return super.onInit();
   }
 
   public render(): void {

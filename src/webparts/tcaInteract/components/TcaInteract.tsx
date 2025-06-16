@@ -22,7 +22,7 @@ const TcaInteract: React.FC<ITcaInteractProps> = ({ description, context }) => {
   const [shoutOut, setShoutOut] = useState<IShoutOut | null>(null);
   const [events, setEvents] = useState<IEvent[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  // Removed unused error state
 
   useEffect(() => {
     const loadSharePointData = async () => {
@@ -79,7 +79,6 @@ const TcaInteract: React.FC<ITcaInteractProps> = ({ description, context }) => {
 
       } catch (err) {
         console.error('Error loading SharePoint data:', err);
-        setError('Failed to load data from SharePoint');
       } finally {
         setLoading(false);
       }
