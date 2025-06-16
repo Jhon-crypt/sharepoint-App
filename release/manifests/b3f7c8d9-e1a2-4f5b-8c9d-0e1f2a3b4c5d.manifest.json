@@ -1,0 +1,71 @@
+{
+  "id": "b3f7c8d9-e1a2-4f5b-8c9d-0e1f2a3b4c5d",
+  "alias": "TcaInteractWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Advanced"
+      },
+      "title": {
+        "default": "TCA Interact"
+      },
+      "description": {
+        "default": "TCA Interactive SharePoint Web Part"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "TCA Interact"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [],
+    "entryModuleId": "tca-interact-web-part",
+    "scriptResources": {
+      "tca-interact-web-part": {
+        "type": "path",
+        "path": "tca-interact-web-part.js"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db",
+        "version": "1.18.2"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.18.2"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+        "version": "1.18.2"
+      },
+      "react": {
+        "type": "component",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "version": "17.0.1"
+      },
+      "react-dom": {
+        "type": "component",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "version": "17.0.1"
+      },
+      "TcaInteractWebPartStrings": {
+        "type": "path",
+        "path": "TcaInteractWebPartStrings_en-us.js"
+      }
+    }
+  }
+}

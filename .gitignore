@@ -12,13 +12,13 @@ pids
 *.seed
 *.pid.lock
 
-# SharePoint Framework build artifacts
-dist
-lib
-solution
-temp
-coverage
-.nyc_output
+# # SharePoint Framework build artifacts
+# dist
+# lib
+# solution
+# temp
+# coverage
+# .nyc_output
 
 # Dependency directories
 node_modules
@@ -86,14 +86,14 @@ jspm_packages/
 ehthumbs.db
 Thumbs.db
 
-# SharePoint Framework specific
-config/copy-assets.json
-config/deploy-azure-storage.json
-config/package-solution.json
-config/serve.json
-config/write-manifests.json
-sharepoint/solution/*.sppkg
-release/
+# # SharePoint Framework specific
+# config/copy-assets.json
+# config/deploy-azure-storage.json
+# config/package-solution.json
+# config/serve.json
+# config/write-manifests.json
+# sharepoint/solution/*.sppkg
+# release/
 
 # Visual Studio / IDE
 .vscode/
